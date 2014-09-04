@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1>hashtagless <small>so you never have to see a stupid hashtag again</small></h1>
+</div>
+<%= form_for(@user) do |f| %>
+  <div>
+<%= f.label :first_name %>
+<%= f.text_field :first_name %>
+  </div><div>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  </div><div>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  </div><div>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  </div>
+<% end %>
