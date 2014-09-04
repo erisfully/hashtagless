@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  root 'dashboard#index'
 
-  get '/register' => 'users#new', as: :users
-  post '/register' => 'users#create'
+  get '/welcome' => 'welcome#index'
+  get '/register' => 'registrations#new', as: :users
+  post '/register' => 'registrations#create'
 end
