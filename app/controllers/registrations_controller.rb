@@ -12,6 +12,8 @@ class RegistrationsController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.save
+      @user && @user.authenticate(params[:user][:password])
+      session[:user_id] = @user.id
       redirect_to root_path
     else
       render 'new'
