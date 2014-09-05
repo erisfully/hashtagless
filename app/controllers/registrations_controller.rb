@@ -16,6 +16,7 @@ class RegistrationsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path
     else
+      flash[:notice]
       render 'new'
     end
   end
