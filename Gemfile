@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'sass'
-
+gem 'rails_12factor'
 
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

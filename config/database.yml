@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: hashtagless_production
-  username: hashtagless
   password: <%= ENV['HASHTAGLESS_DATABASE_PASSWORD'] %>
