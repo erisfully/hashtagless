@@ -16,7 +16,7 @@ feature "viewing the welcome page and registering" do
 
     register_user("", "", "", "")
 
-    expect(page).to have_cotent "all fields are required"
+    expect(page).to have_content "all fields are required"
 
   end
   def register_user(first_name, last_name, email, password)

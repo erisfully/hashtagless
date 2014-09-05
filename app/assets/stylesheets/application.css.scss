@@ -7,6 +7,17 @@ body {
   text-align: center;
   padding-top: 60px;
 }
+.navbar-header {
+  padding-left: 20%;
+}
+
+.navbar-buttons {
+  padding-right: 20%;
+}
+
+#welcome_page {
+  background: #ffffff;
+}
 
 .form-horizontal {
   width: 40%;
@@ -18,4 +29,7 @@ body {
   padding-left: 0;
 }
 
+.notice {
+  color: #cb4154;
+}
 

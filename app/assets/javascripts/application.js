@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+$(document).ready(function() {
+
+  var notice = $('.notice');
+  notice.fadeOut(5000)
+
+});
