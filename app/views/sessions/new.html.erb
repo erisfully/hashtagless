@@ -1,12 +1,12 @@
 <h1>Login</h1>
 
-<%= form_for (@user), url: signin_path do |f| %>
-  <div class="form-group"><%= f.label :email %>
-    <%= f.email_field :email %>
+<%= form_for (@user), :html => {:class => "form-horizontal", :role => "form"}, url: signin_path do |f| %>
+  <div class="form-group"><%= f.label :email, :class => "col-md-4 control-label", :id => "form_label" %>
+    <%= f.email_field :email, :class => "form-control"  %>
   </div>
   <div class="form-group">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= f.label :password, :class => "col-md-4 control-label", :id => "form_label"%>
+    <%= f.password_field :password, :class => "form-control" %>
   </div>
   <%= f.submit :login %>
 <% end %>
