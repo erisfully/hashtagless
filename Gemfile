@@ -11,6 +11,8 @@ gem 'autoprefixer-rails'
 gem 'sass'
 gem 'rails_12factor'
 gem 'launchy'
+gem 'twitter'
+gem 'omniauth-twitter'
 
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

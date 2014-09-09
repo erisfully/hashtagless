@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/signin' => 'sessions#new', as: :signin
   post '/signin' => 'sessions#create'
 
+
+  get '/auth/twitter/callback' => 'users#twitter_login'
 end
