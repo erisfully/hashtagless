@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   post '/signin' => 'sessions#create'
 
 
-  get '/auth/twitter/callback' => 'users#twitter_login'
+  get '/auth/twitter/callback' => 'twitter_registration#create'
 end
