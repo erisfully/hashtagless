@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post '/register' => 'registrations#create'
   get '/signin' => 'sessions#new', as: :signin
   post '/signin' => 'sessions#create'
+  get 'signout' => 'sessions#destroy'
 
 
   get '/auth/twitter/callback' => 'users#twitter_login'
