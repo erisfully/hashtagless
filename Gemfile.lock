@@ -51,6 +51,11 @@ GEM
     coffee-script-source (1.7.1)
     database_cleaner (1.2.0)
     diff-lcs (1.2.5)
+    dotenv (0.11.1)
+      dotenv-deployment (~> 0.0.2)
+    dotenv-deployment (0.0.2)
+    dotenv-rails (0.11.1)
+      dotenv (= 0.11.1)
     equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -195,6 +200,8 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
+  dotenv-rails
+  faraday
   jbuilder (~> 2.0)
   jquery-rails
   launchy
