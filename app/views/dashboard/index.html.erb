@@ -5,12 +5,13 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right navbar-buttons">
+        <p class="navbar-text navbar-center" id="welcome">welcome, @erisfully</p>
         <li><%= link_to 'log out', signout_path %></li>
       </ul>
     </div>
   </div>
 </nav>
-<h1>dashboard</h1>
 
 
-<a href=”/auth/twitter”>Login Via Twitter</a>
+<%= link_to 'twitter', twitter_path %>
+<%= @friends if @friends %>

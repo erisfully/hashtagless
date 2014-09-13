@@ -13,6 +13,8 @@ gem 'rails_12factor'
 gem 'launchy'
 gem 'twitter'
 gem 'omniauth-twitter'
+gem 'dotenv-rails'
+gem 'faraday'
 
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

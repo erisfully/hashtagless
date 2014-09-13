@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   post '/signin' => 'sessions#create'
   get 'signout' => 'sessions#destroy'
 
+  match '/auth/:provider/callback', to: 'twitter#create', via: [:get, :post]
+  match '/auth/failure', to: redirect('/'), via: [:get, :post]
+  get '/twitter', to: 'twitter#new', as: :twitter
 
-  get '/auth/twitter/callback' => 'twitter_registration#create'
 end
